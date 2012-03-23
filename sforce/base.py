@@ -549,7 +549,21 @@ Salesforce will use HTTPS.')
     '''
     self._setHeaders('describeTabs')
     return self._sforce.service.describeTabs()
-
+    
+  def describeDataCategoryGroups(self, sObjects=[]):
+    '''
+    Retrieves available category groups for objects specified in the request.
+    '''
+    self._setHeaders('describeDataCategoryGroups')
+    return self._sforce.service.describeDataCategoryGroups(sObjects)
+  
+  def describeDataCategoryGroupStructures(self, sObjects=[], topCategoriesOnly=False):
+    '''
+    Retrieves available category groups along with their data category structure for objects specified in the request.
+    '''
+    self._setHeaders('describeDataCategoryGroupStructures')
+    return self._sforce.service.describeDataCategoryGroupStructures(sObjects, topCategoriesOnly)
+    
   # Utility calls
 
   def getServerTimestamp(self):
