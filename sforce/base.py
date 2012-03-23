@@ -19,7 +19,7 @@ import sys
 import os.path
 
 from suds.client import Client
-from suds.transport.cache import FileCache
+from suds.cache import FileCache
 import suds.sudsobject
 from suds.sax.element import Element
 

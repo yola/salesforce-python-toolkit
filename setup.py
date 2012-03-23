@@ -25,7 +25,7 @@ setup(
         'Topic :: Software Development :: Libraries :: Python Modules'
     ],
     install_requires = [
-        'suds==0.3.7',
+        'suds==0.4',
     ],
     zip_safe = False
 )
